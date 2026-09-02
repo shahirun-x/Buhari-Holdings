@@ -100,15 +100,17 @@ function NavigationMenuViewport({
   ...props
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>) {
   return (
-    <div
-      className={cn(
-        "absolute top-full left-0 isolate z-50 flex justify-center"
-      )}
-    >
+    // `fixed` (not `absolute`) so this positions against the viewport
+    // rather than the Root, which is `max-w-max` and would otherwise
+    // constrain a mega-menu to the width of the nav itself. Undecorated —
+    // the active NavigationMenuContent (e.g. the businesses mega-menu)
+    // supplies its own background/blur, so this is purely a positioning
+    // box spanning the full viewport width, docked under the header.
+    <div className="fixed inset-x-0 top-16 isolate z-50 flex justify-center lg:top-22">
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-lg bg-popover text-popover-foreground shadow ring-1 ring-foreground/10 duration-100 md:w-(--radix-navigation-menu-viewport-width) data-open:animate-in data-open:zoom-in-90 data-closed:animate-out data-closed:zoom-out-90",
+          "relative h-(--radix-navigation-menu-viewport-height) w-full origin-top overflow-hidden duration-150 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
           className
         )}
         {...props}

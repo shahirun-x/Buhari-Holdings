@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="container flex min-h-screen flex-col justify-center py-16">
+    <div className="container flex flex-col justify-center py-24 lg:py-32">
       <div className="flex items-start justify-between gap-6">
         <p className="font-body text-sm uppercase tracking-[0.2em] text-muted-foreground">
           Est. 1989 — Chennai
@@ -28,6 +28,6 @@ export default function Home() {
           toggle above.
         </p>
       </div>
-    </main>
+    </div>
   );
 }
