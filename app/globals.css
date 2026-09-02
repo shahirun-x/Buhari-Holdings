@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Bridge the JS config so `bg-ink`, `text-brass`, `font-display`,
+   the `.container` class, and the shadcn color utilities all resolve. */
+@config "../tailwind.config.ts";
+
+/* `dark:` variants key off a `.dark` class (set by next-themes),
+   not the OS media query, so the manual toggle wins. */
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   Design tokens — the single source of truth. Never hardcode a
+   colour or font anywhere else; reach for these variables (or the
+   Tailwind utilities generated from them in tailwind.config.ts).
+   Full documentation lives in /styles/tokens.md.
+   ============================================================ */
+:root {
+  /* Brand palette — constant across themes. */
+  --ink: #0e1116;
+  --midnight: #0a2540;
+  --brass: #b8894a;
+  --ivory: #f5f1e8;
+  --sand: #ebe3d3;
+  --seagrass: #2c5f5d;
+  --white: #ffffff;
+
+  /* Corner radius scale (shadcn primitives read these directly). */
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Semantic surface tokens — light theme. Body reads
+     --background / --foreground, so light = ivory on ink. */
+  --background: var(--ivory);
+  --foreground: var(--ink);
+  --card: var(--white);
+  --card-foreground: var(--ink);
+  --popover: var(--white);
+  --popover-foreground: var(--ink);
+  --primary: var(--midnight);
+  --primary-foreground: var(--ivory);
+  --secondary: var(--sand);
+  --secondary-foreground: var(--ink);
+  --muted: var(--sand);
+  --muted-foreground: #57524a;
+  --accent: var(--sand);
+  --accent-foreground: var(--ink);
+  --destructive: #b23b3b;
+  --destructive-foreground: var(--ivory);
+  --border: #ddd2bc;
+  --input: #ddd2bc;
+  --ring: var(--brass);
+}
+
+.dark {
+  /* Semantic surface tokens — dark theme inverts to ink on ivory. */
+  --background: var(--ink);
+  --foreground: var(--ivory);
+  --card: #14181f;
+  --card-foreground: var(--ivory);
+  --popover: #14181f;
+  --popover-foreground: var(--ivory);
+  --primary: var(--brass);
+  --primary-foreground: var(--ink);
+  --secondary: #1c2129;
+  --secondary-foreground: var(--ivory);
+  --muted: #1c2129;
+  --muted-foreground: #a7a093;
+  --accent: #1c2129;
+  --accent-foreground: var(--ivory);
+  --destructive: #e06b6b;
+  --destructive-foreground: var(--ink);
+  --border: #262b33;
+  --input: #2a2f37;
+  --ring: var(--brass);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Tabular numerals for stats and figures (CLAUDE.md type rule). */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
