@@ -87,7 +87,7 @@ export function DesktopNav() {
           })}
         </NavigationMenuList>
 
-        <NavigationMenuViewport />
+        <NavigationMenuViewport fullWidth />
       </NavigationMenu>
 
       {/* Backdrop — blurs the page behind the open mega-menu. Lives outside

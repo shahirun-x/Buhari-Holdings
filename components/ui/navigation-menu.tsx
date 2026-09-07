@@ -97,20 +97,35 @@ function NavigationMenuContent({
 
 function NavigationMenuViewport({
   className,
+  fullWidth = false,
   ...props
-}: React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>) {
+}: React.ComponentProps<typeof NavigationMenuPrimitive.Viewport> & {
+  /**
+   * Opt into a full-bleed mega-menu. When set, the wrapper is `fixed`
+   * (not `absolute`) so it positions against the viewport rather than the
+   * Root, which is `max-w-max` and would otherwise constrain a mega-menu
+   * to the width of the nav itself. The viewport is also left undecorated —
+   * the active NavigationMenuContent (e.g. the businesses mega-menu)
+   * supplies its own background/blur, so it becomes purely a positioning
+   * box spanning the full viewport width, docked under the header.
+   */
+  fullWidth?: boolean
+}) {
   return (
-    // `fixed` (not `absolute`) so this positions against the viewport
-    // rather than the Root, which is `max-w-max` and would otherwise
-    // constrain a mega-menu to the width of the nav itself. Undecorated —
-    // the active NavigationMenuContent (e.g. the businesses mega-menu)
-    // supplies its own background/blur, so this is purely a positioning
-    // box spanning the full viewport width, docked under the header.
-    <div className="fixed inset-x-0 top-16 isolate z-50 flex justify-center lg:top-22">
+    <div
+      className={cn(
+        "isolate z-50 flex justify-center",
+        fullWidth
+          ? "fixed inset-x-0 top-16 w-screen lg:top-22"
+          : "absolute top-full left-0"
+      )}
+    >
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "relative h-(--radix-navigation-menu-viewport-height) w-full origin-top overflow-hidden duration-150 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
+          fullWidth
+            ? "relative h-(--radix-navigation-menu-viewport-height) w-full origin-top overflow-hidden duration-150 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0"
+            : "origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-lg bg-popover text-popover-foreground shadow ring-1 ring-foreground/10 duration-100 md:w-(--radix-navigation-menu-viewport-width) data-open:animate-in data-open:zoom-in-90 data-closed:animate-out data-closed:zoom-out-90",
           className
         )}
         {...props}
