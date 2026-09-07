@@ -97,3 +97,64 @@
     font-variant-numeric: tabular-nums;
   }
 }
+
+/* ============================================================
+   Motion. The mask rise is the signature reveal — text slides up
+   from behind a clipped edge, weighted and slow, never bouncy.
+   Ken Burns and the carousel progress fill are CSS-driven so they
+   key off the active slide rather than a JS animation loop.
+
+   The media query below is a safety net. Components additionally
+   gate on the useReducedMotion hook, because behaviour (autoplay,
+   count-ups, scroll reveals) has to change too — not just paint.
+   ============================================================ */
+@keyframes bh-mask-rise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bh-ken-burns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes bh-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@layer components {
+  .animate-mask-rise {
+    animation: bh-mask-rise 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-ken-burns {
+    animation: bh-ken-burns 9000ms ease-out both;
+  }
+
+  /* Duration is supplied inline so it always tracks the slide interval. */
+  .animate-progress {
+    transform-origin: left;
+    animation: bh-progress linear both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mask-rise,
+  .animate-ken-burns,
+  .animate-progress {
+    animation: none !important;
+  }
+}

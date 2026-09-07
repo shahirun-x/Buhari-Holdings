@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Placeholder image">
+  <rect width="800" height="450" fill="#EBE3D3"/>
+  <line x1="200" y1="225" x2="600" y2="225" stroke="#B8894A" stroke-width="2"/>
+  <text x="24" y="428" font-family="ui-monospace, monospace" font-size="16" fill="#8A8F98">chronicle-2.svg</text>
+</svg>

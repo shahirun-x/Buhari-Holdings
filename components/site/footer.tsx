@@ -6,6 +6,7 @@ import {
   FOOTER_COMPANY_LINKS,
   SOCIAL_LINKS,
 } from "@/components/site/nav-config";
+import { MastheadRule } from "@/components/site/masthead-rule";
 import { NewsletterForm } from "@/components/site/newsletter-form";
 
 const linkClasses =
@@ -17,13 +18,7 @@ const headingClasses =
 export function Footer() {
   return (
     <footer className="bg-ink py-16 text-ivory lg:py-20">
-      {/* Masthead motif */}
-      <div className="border-t border-brass/40">
-        <p className="container py-4 text-center font-body text-[10px] uppercase tracking-[0.3em] text-ivory/70">
-          Buhari · Since 1989
-        </p>
-      </div>
-      <div className="border-t border-brass/40" />
+      <MastheadRule />
 
       <div className="container mt-16 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
         {/* Identity column */}

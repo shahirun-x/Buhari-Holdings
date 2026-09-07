@@ -1,0 +1,23 @@
+[
+  {
+    "kicker": "The Buhari story",
+    "headline": "Built on trust. Since 1989.",
+    "cta": { "label": "Read our chronicle", "href": "/about/heritage" },
+    "image": "/images/hero-1.svg",
+    "alt": ""
+  },
+  {
+    "kicker": "Our businesses",
+    "headline": "Eight sectors. One legacy.",
+    "cta": { "label": "Explore our verticals", "href": "/businesses" },
+    "image": "/images/hero-2.svg",
+    "alt": ""
+  },
+  {
+    "kicker": "Community",
+    "headline": "A commitment beyond commerce.",
+    "cta": { "label": "Our institutions", "href": "/community" },
+    "image": "/images/hero-3.svg",
+    "alt": ""
+  }
+]

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-1140" y1="1180" x2="140" y2="-100" />
+    <line x1="-950" y1="1180" x2="330" y2="-100" />
+    <line x1="-760" y1="1180" x2="520" y2="-100" />
+    <line x1="-570" y1="1180" x2="710" y2="-100" />
+    <line x1="-380" y1="1180" x2="900" y2="-100" />
+    <line x1="-190" y1="1180" x2="1090" y2="-100" />
+    <line x1="0" y1="1180" x2="1280" y2="-100" />
+    <line x1="190" y1="1180" x2="1470" y2="-100" />
+    <line x1="380" y1="1180" x2="1660" y2="-100" />
+    <line x1="570" y1="1180" x2="1850" y2="-100" />
+    <line x1="760" y1="1180" x2="2040" y2="-100" />
+    <line x1="950" y1="1180" x2="2230" y2="-100" />
+    <line x1="1140" y1="1180" x2="2420" y2="-100" />
+    <line x1="1330" y1="1180" x2="2610" y2="-100" />
+    <line x1="1520" y1="1180" x2="2800" y2="-100" />
+    <line x1="1710" y1="1180" x2="2990" y2="-100" />
+    <line x1="1900" y1="1180" x2="3180" y2="-100" />
+    <line x1="2090" y1="1180" x2="3370" y2="-100" />
+    <line x1="2280" y1="1180" x2="3560" y2="-100" />
+    <line x1="2470" y1="1180" x2="3750" y2="-100" />
+    <line x1="2660" y1="1180" x2="3940" y2="-100" />
+    <line x1="2850" y1="1180" x2="4130" y2="-100" />
+    <line x1="3040" y1="1180" x2="4320" y2="-100" />
+  </g>
+  <text x="48" y="1032" font-family="ui-monospace, monospace" font-size="26" fill="#8A8F98">hero-3.svg</text>
+</svg>

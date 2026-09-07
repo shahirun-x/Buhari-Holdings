@@ -1,0 +1,30 @@
+{
+  "_note": "Placeholder editorial copy. Written to sit in the right register and length for layout purposes only — it states no figures, dates, contract values, project names or clients. Replace wholesale with real Chronicle entries before launch.",
+  "viewAllHref": "/newsroom",
+  "items": [
+    {
+      "slug": "the-long-view-in-construction",
+      "category": "Construction",
+      "title": "The long view in construction",
+      "excerpt": "Civic building is measured in decades, not quarters. A note on why the group still specifies for the second generation of a structure's users rather than the first.",
+      "image": "/images/chronicle-1.svg",
+      "alt": ""
+    },
+    {
+      "slug": "steady-passage",
+      "category": "Shipping & Trading",
+      "title": "Steady passage",
+      "excerpt": "Bulk and liquid cargo move on relationships as much as on routes. How the shipping arm thinks about reliability when conditions at sea and in the market rarely agree.",
+      "image": "/images/chronicle-2.svg",
+      "alt": ""
+    },
+    {
+      "slug": "what-outlasts-the-ledger",
+      "category": "Community",
+      "title": "What outlasts the ledger",
+      "excerpt": "The institutions the group supports are not a line item. A short reflection on stewardship, and on the buildings that keep working long after the ribbon is cut.",
+      "image": "/images/chronicle-3.svg",
+      "alt": ""
+    }
+  ]
+}
