@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-830" y1="1100" x2="70" y2="-100" />
+    <line x1="-640" y1="1100" x2="260" y2="-100" />
+    <line x1="-450" y1="1100" x2="450" y2="-100" />
+    <line x1="-260" y1="1100" x2="640" y2="-100" />
+    <line x1="-70" y1="1100" x2="830" y2="-100" />
+    <line x1="120" y1="1100" x2="1020" y2="-100" />
+    <line x1="310" y1="1100" x2="1210" y2="-100" />
+    <line x1="500" y1="1100" x2="1400" y2="-100" />
+    <line x1="690" y1="1100" x2="1590" y2="-100" />
+    <line x1="880" y1="1100" x2="1780" y2="-100" />
+    <line x1="1070" y1="1100" x2="1970" y2="-100" />
+    <line x1="1260" y1="1100" x2="2160" y2="-100" />
+    <line x1="1450" y1="1100" x2="2350" y2="-100" />
+    <line x1="1640" y1="1100" x2="2540" y2="-100" />
+  </g>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="34" fill="#B8894A" fill-opacity="0.85">Properties</text>
+  <text x="40" y="960" font-family="ui-monospace, monospace" font-size="18" fill="#8A8F98">vertical-properties.svg</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-760" y1="1100" x2="140" y2="-100" />
+    <line x1="-530" y1="1100" x2="370" y2="-100" />
+    <line x1="-300" y1="1100" x2="600" y2="-100" />
+    <line x1="-70" y1="1100" x2="830" y2="-100" />
+    <line x1="160" y1="1100" x2="1060" y2="-100" />
+    <line x1="390" y1="1100" x2="1290" y2="-100" />
+    <line x1="620" y1="1100" x2="1520" y2="-100" />
+    <line x1="850" y1="1100" x2="1750" y2="-100" />
+    <line x1="1080" y1="1100" x2="1980" y2="-100" />
+    <line x1="1310" y1="1100" x2="2210" y2="-100" />
+    <line x1="1540" y1="1100" x2="2440" y2="-100" />
+    <line x1="1770" y1="1100" x2="2670" y2="-100" />
+  </g>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="34" fill="#B8894A" fill-opacity="0.85">Construction</text>
+  <text x="40" y="960" font-family="ui-monospace, monospace" font-size="18" fill="#8A8F98">vertical-construction.svg</text>
+</svg>

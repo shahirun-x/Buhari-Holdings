@@ -135,6 +135,17 @@
   }
 }
 
+@keyframes bh-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Exactly one copy of the card list — the track holds it twice, so
+       the wrap point lands on an identical frame and reads as seamless. */
+    transform: translateX(-50%);
+  }
+}
+
 @layer components {
   .animate-mask-rise {
     animation: bh-mask-rise 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -149,12 +160,34 @@
     transform-origin: left;
     animation: bh-progress linear both;
   }
+
+  /* Slower on small screens, where less of the track is visible at once.
+     Play state is set inline so hover can freeze it. */
+  .animate-marquee {
+    animation: bh-marquee 65s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-marquee {
+      animation-duration: 45s;
+    }
+  }
+
+  /* Manual drag stays available; the bar itself would break the band. */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-mask-rise,
   .animate-ken-burns,
-  .animate-progress {
+  .animate-progress,
+  .animate-marquee {
     animation: none !important;
   }
 }

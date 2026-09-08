@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-690" y1="1100" x2="210" y2="-100" />
+    <line x1="-420" y1="1100" x2="480" y2="-100" />
+    <line x1="-150" y1="1100" x2="750" y2="-100" />
+    <line x1="120" y1="1100" x2="1020" y2="-100" />
+    <line x1="390" y1="1100" x2="1290" y2="-100" />
+    <line x1="660" y1="1100" x2="1560" y2="-100" />
+    <line x1="930" y1="1100" x2="1830" y2="-100" />
+    <line x1="1200" y1="1100" x2="2100" y2="-100" />
+    <line x1="1470" y1="1100" x2="2370" y2="-100" />
+    <line x1="1740" y1="1100" x2="2640" y2="-100" />
+  </g>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="34" fill="#B8894A" fill-opacity="0.85">Engineering</text>
+  <text x="40" y="960" font-family="ui-monospace, monospace" font-size="18" fill="#8A8F98">vertical-engineering.svg</text>
+</svg>

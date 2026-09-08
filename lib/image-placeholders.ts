@@ -20,3 +20,7 @@ export const BLUR_INK =
 /** 1×1 PNG of --sand #ebe3d3 — for the chronicle cards. */
 export const BLUR_SAND =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4/fgyAAVeAqLrAyxlAAAAAElFTkSuQmCC";
+
+/** 1x1 PNG of the neutral grey used by logo-placeholder.svg. */
+export const BLUR_MIST =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGN4/PghAAVUAqhPqTAGAAAAAElFTkSuQmCC";

@@ -1,0 +1,17 @@
+{
+  "_note": "CLIENT-CONFIRM REQUIRED. The six named entities below are drawn from public records of companies chaired by the founder, B.S. Abdur Rahman. They are NOT confirmed subsidiaries, divisions or holdings of Buhari Holdings Pvt Ltd, and this site must not present them as such. The exact relationship between each entity and Buhari Holdings must be confirmed by the client before launch. The section heading wording depends on that answer: it currently reads 'Associated enterprises', which asserts nothing about ownership. Only change it to 'Group companies', 'Our companies' or 'Subsidiaries' once the client confirms that ownership relationship in writing. Until then the cards are deliberately not links, so nothing implies a corporate hierarchy. Entries marked \"placeholder\": true exist only so the marquee has enough cards to loop convincingly — replace or remove them before launch.",
+  "entries": [
+    { "name": "East Coast Constructions & Industries" },
+    { "name": "West Asia Maritime" },
+    { "name": "Coal and Oil Group" },
+    { "name": "ABR Enterprises" },
+    { "name": "Sethu Investments" },
+    { "name": "West Asia Exports & Imports" },
+    { "name": "Placeholder Enterprise 1", "placeholder": true },
+    { "name": "Placeholder Enterprise 2", "placeholder": true },
+    { "name": "Placeholder Enterprise 3", "placeholder": true },
+    { "name": "Placeholder Enterprise 4", "placeholder": true },
+    { "name": "Placeholder Enterprise 5", "placeholder": true },
+    { "name": "Placeholder Enterprise 6", "placeholder": true }
+  ]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-710" y1="1100" x2="190" y2="-100" />
+    <line x1="-480" y1="1100" x2="420" y2="-100" />
+    <line x1="-250" y1="1100" x2="650" y2="-100" />
+    <line x1="-20" y1="1100" x2="880" y2="-100" />
+    <line x1="210" y1="1100" x2="1110" y2="-100" />
+    <line x1="440" y1="1100" x2="1340" y2="-100" />
+    <line x1="670" y1="1100" x2="1570" y2="-100" />
+    <line x1="900" y1="1100" x2="1800" y2="-100" />
+    <line x1="1130" y1="1100" x2="2030" y2="-100" />
+    <line x1="1360" y1="1100" x2="2260" y2="-100" />
+    <line x1="1590" y1="1100" x2="2490" y2="-100" />
+  </g>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="34" fill="#B8894A" fill-opacity="0.85">Agency</text>
+  <text x="40" y="960" font-family="ui-monospace, monospace" font-size="18" fill="#8A8F98">vertical-agency.svg</text>
+</svg>

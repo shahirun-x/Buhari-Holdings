@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#0A2540"/>
+      <stop offset="1" stop-color="#0E1116"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g stroke="#B8894A" stroke-opacity="0.12" stroke-width="2">
+    <line x1="-840" y1="1100" x2="60" y2="-100" />
+    <line x1="-650" y1="1100" x2="250" y2="-100" />
+    <line x1="-460" y1="1100" x2="440" y2="-100" />
+    <line x1="-270" y1="1100" x2="630" y2="-100" />
+    <line x1="-80" y1="1100" x2="820" y2="-100" />
+    <line x1="110" y1="1100" x2="1010" y2="-100" />
+    <line x1="300" y1="1100" x2="1200" y2="-100" />
+    <line x1="490" y1="1100" x2="1390" y2="-100" />
+    <line x1="680" y1="1100" x2="1580" y2="-100" />
+    <line x1="870" y1="1100" x2="1770" y2="-100" />
+    <line x1="1060" y1="1100" x2="1960" y2="-100" />
+    <line x1="1250" y1="1100" x2="2150" y2="-100" />
+    <line x1="1440" y1="1100" x2="2340" y2="-100" />
+    <line x1="1630" y1="1100" x2="2530" y2="-100" />
+  </g>
+  <text x="40" y="120" font-family="Georgia, serif" font-size="34" fill="#B8894A" fill-opacity="0.85">Community</text>
+  <text x="40" y="960" font-family="ui-monospace, monospace" font-size="18" fill="#8A8F98">community-institutions.svg</text>
+</svg>
