@@ -1,0 +1,24 @@
+{
+  "_note": "CLIENT-CONFIRM REQUIRED — all four figures below must be confirmed by the client before launch. Provenance as currently understood: 1989 is the stated founding year in Chennai; '1,000+ people' is the conservative floor of the group's stated 1,001-2,000 employee band; 8 verticals matches BUSINESS_VERTICALS in components/site/nav-config.ts and should be kept in step with it; 6 markets is India, UAE, Far East, Europe, America and Australia. Note this is deliberately 'markets', not 'continents' — India, the UAE and the Far East are all Asia, so a continent count would be wrong.",
+  "stats": [
+    {
+      "value": 1989,
+      "from": 1900,
+      "label": "Founded in Chennai"
+    },
+    {
+      "value": 1000,
+      "suffix": "+",
+      "grouped": true,
+      "label": "People across the group"
+    },
+    {
+      "value": 8,
+      "label": "Business verticals"
+    },
+    {
+      "value": 6,
+      "label": "Markets worldwide"
+    }
+  ]
+}
