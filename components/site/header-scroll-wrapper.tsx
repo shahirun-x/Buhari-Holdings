@@ -3,6 +3,7 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { LENIS_SCROLL_EVENT } from "@/lib/scroll-events";
 
 const SCROLL_THRESHOLD = 40;
 
@@ -13,6 +14,12 @@ const SCROLL_THRESHOLD = 40;
  * already scrolled) and every subsequent update happen inside a
  * requestAnimationFrame callback — never synchronously in the effect
  * body — so this stays a plain "subscribe to an external system" effect.
+ *
+ * Listens for Lenis's per-frame scroll signal as well as the native event.
+ * Under smooth scroll the native events are sparse and lag the animated
+ * position, so on their own they can leave this latched to a stale state.
+ * Both feed the same rAF throttle, and the Lenis event simply never fires
+ * when smooth scroll is off.
  */
 export function HeaderScrollWrapper({
   children,
@@ -34,11 +41,13 @@ export function HeaderScrollWrapper({
 
     const initialFrame = requestAnimationFrame(measure);
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener(LENIS_SCROLL_EVENT, onScroll);
 
     return () => {
       cancelAnimationFrame(initialFrame);
       if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
       window.removeEventListener("scroll", onScroll);
+      window.removeEventListener(LENIS_SCROLL_EVENT, onScroll);
     };
   }, []);
 

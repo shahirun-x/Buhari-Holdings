@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SmoothScroll } from "@/components/site/smooth-scroll";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import "./globals.css";
@@ -60,6 +61,7 @@ export default function RootLayout({
           >
             Skip to content
           </a>
+          <SmoothScroll />
           <Header />
           <main id="main" className="min-h-screen pt-16 lg:pt-22">
             {children}
