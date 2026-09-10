@@ -1,0 +1,14 @@
+{
+  "_note": "CLIENT-CONFIRM REQUIRED. Every image here is a generated SVG placeholder reused from elsewhere on the site, present only so the masonry layout can be reviewed. The captions are descriptive of the placeholder, not of anything the group has built, and must not survive contact with real photography. Before launch the client must supply: real photographs with the rights cleared for web use; accurate captions naming what is actually shown; permission for any identifiable people or client premises that appear; and confirmation of whether the gallery should be grouped by sector, by date or left ungrouped. Alt text must be written per image once the real photographs land — the current empty alt is correct only because these are abstract placeholders.",
+  "items": [
+    { "id": "g1", "src": "/images/hero-1.svg", "caption": "Placeholder — hero frame one", "width": 1920, "height": 1080 },
+    { "id": "g2", "src": "/images/vertical-construction.svg", "caption": "Placeholder — construction", "width": 800, "height": 1000 },
+    { "id": "g3", "src": "/images/chronicle-1.svg", "caption": "Placeholder — chronicle one", "width": 800, "height": 450 },
+    { "id": "g4", "src": "/images/vertical-shipping-trading.svg", "caption": "Placeholder — shipping and trading", "width": 800, "height": 1000 },
+    { "id": "g5", "src": "/images/hero-2.svg", "caption": "Placeholder — hero frame two", "width": 1920, "height": 1080 },
+    { "id": "g6", "src": "/images/vertical-energy.svg", "caption": "Placeholder — energy", "width": 800, "height": 1000 },
+    { "id": "g7", "src": "/images/chronicle-2.svg", "caption": "Placeholder — chronicle two", "width": 800, "height": 450 },
+    { "id": "g8", "src": "/images/community-institutions.svg", "caption": "Placeholder — community institutions", "width": 800, "height": 1000 },
+    { "id": "g9", "src": "/images/hero-3.svg", "caption": "Placeholder — hero frame three", "width": 1920, "height": 1080 }
+  ]
+}

@@ -50,6 +50,29 @@ The other sections are ordinary release work and can be judged on their merits.
 - [ ] **Chronicle placeholder copy replaced** (`content/chronicle-preview.json`).
       The current three entries are written to the right length and register but
       state no figures, dates, values or clients.
+- [ ] **Newsroom content confirmed.** `content/news/` holds six entries:
+  - [ ] `hidco-kolkata-flyover.json` and `coastal-energen-work-order.json` are
+        drawn from the client's own published material. **No contract value is
+        stated, deliberately.** Confirm these may still be publicised, that the
+        counterparties consent to being named, the accurate scope and status,
+        the exact dates (only the month is recorded), and whether any figures
+        may be published. If any of that cannot be confirmed, remove the entry
+        rather than softening it.
+  - [ ] The four editorial pieces are placeholder copy written in the group's
+        voice. **Nobody at the client has agreed to these words.** Replace them
+        or approve them explicitly as the group's own position.
+- [ ] **Contact details are placeholders.** `+91 44 XXXX XXXX` and
+      `hello@buhariholding.com` now appear on the contact page as well as the
+      footer, both from `HEAD_OFFICE` in `nav-config.ts`. A contact page that
+      reaches nobody is worse than no contact page.
+- [ ] **Gallery captions and permissions** — `content/gallery.json`. Every image
+      is a placeholder; captions describe the placeholder, not real work.
+- [ ] **Careers roles** — `content/careers/roles.json` ships an empty array and
+      an honest empty state. Supply real roles, locations, departments and an
+      application destination.
+- [ ] **Innovation section — removed from nav; reinstate only if the client
+      supplies content.** There was no source material and an empty page is
+      worse than no page.
 - [ ] Community band copy re-checked once the institution relationships are
       confirmed — it currently says the family's name "is carried by" the
       institutions rather than claiming the group founded or funds them.
@@ -108,20 +131,36 @@ The other sections are ordinary release work and can be judged on their merits.
       the final value as the band scrolls into view.
 - [ ] `prefers-reduced-motion` verified end to end on a real machine.
 
+## Legal — blocking
+
+- [ ] **Privacy policy text — BLOCKING.** `/privacy` is a structural stub with a
+      "being finalised" notice and section headings only. The wording must be
+      drafted or approved by the client's counsel; placeholder legal prose would
+      be worse than none, because a wrong policy is enforceable against the
+      client in a way that a missing one is not. Indian law applies and the
+      Digital Personal Data Protection Act needs addressing, covering what the
+      contact form and any future analytics actually collect.
+- [ ] **Terms of use text — BLOCKING.** `/terms`, same position. Counsel must
+      supply governing law, liability limits and IP ownership.
+- [ ] Neither page may go live carrying the placeholder notice.
+
 ## Infrastructure
 
 - [ ] **Vercel plan: Hobby is non-commercial.** Move to Pro, or deploy under the
       client's own Vercel account, before launch.
 - [ ] **Custom domain configured** (buhariholding.com or as directed) with HTTPS
       and the apex/www redirect settled.
-- [ ] **Contact form wired to a real destination.** There is no contact form yet
-      — the `/contact` route does not exist.
+- [ ] **Contact form wired to a real destination.** The form now exists and
+      validates on both sides, but `app/contact/actions.ts` only logs to the
+      server console. Wire a transactional email provider or the client's CRM,
+      put the key in an environment variable, and add rate limiting and a spam
+      check — the endpoint is public. See the TODO in that file.
 - [ ] **Newsletter form wired.** `components/site/newsletter-form.tsx` is
       presentational; submit only calls `preventDefault()`.
 - [ ] **Analytics added.**
-- [ ] Routes built out. Every nav and footer link currently 404s except `/` —
-      `/businesses/*`, `/community`, `/about/*`, `/newsroom`, `/careers`,
-      `/contact`, `/gallery`, `/innovation`, `/privacy`, `/terms`.
+- [ ] Routes built out. Remaining 404s are the About family only:
+      `/about/heritage`, `/about/leadership`, `/about/founder` and
+      `/community`.
 - [ ] **`app/sitemap.ts` is not built yet.** The footer "Sitemap" link points
       at `/sitemap.xml`, which is the conventional destination but **currently
       404s** — Next only serves it once `app/sitemap.ts` exists. Add it (and

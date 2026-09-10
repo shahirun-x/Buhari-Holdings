@@ -101,7 +101,6 @@ export const FOOTER_ABOUT_LINKS: FooterLink[] = [
   { label: "Leadership", href: "/about/leadership" },
   { label: "Founder", href: "/about/founder" },
   { label: "Community", href: "/community" },
-  { label: "Innovation", href: "/innovation" },
 ];
 
 export const FOOTER_COMPANY_LINKS: FooterLink[] = [
@@ -110,6 +109,16 @@ export const FOOTER_COMPANY_LINKS: FooterLink[] = [
   { label: "Contact", href: "/contact" },
   { label: "Gallery", href: "/gallery" },
 ];
+
+/**
+ * Head office details — the single source for the footer and the contact
+ * page. Phone and email are placeholders; see content/contact.json.
+ */
+export const HEAD_OFFICE = {
+  lines: ["No. 4, Moores Road", "Nungambakkam, Chennai 600006", "Tamil Nadu, India"],
+  phone: "+91 44 XXXX XXXX",
+  email: "hello@buhariholding.com",
+} as const;
 
 export type SocialLink = {
   label: string;

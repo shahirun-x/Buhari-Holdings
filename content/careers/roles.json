@@ -1,0 +1,4 @@
+{
+  "_note": "CLIENT-CONFIRM REQUIRED. The roles array is deliberately empty: no vacancies have been supplied, and inventing them would be worse than showing none. The page renders an honest empty state from this file and needs no code change to start listing roles — add objects to the array with the shape { id, title, department, location, type, summary, applyHref }. Before launch the client must supply: the real open roles; the departments and locations they sit in, checked against the six stated markets; employment types; where applications should be sent, since applyHref currently has nowhere to point; and who owns the careers inbox. Confirm too whether speculative applications are genuinely welcome, as the empty state currently invites them.",
+  "roles": []
+}

@@ -50,6 +50,9 @@
   --accent-foreground: var(--ink);
   --destructive: #b23b3b;
   --destructive-foreground: var(--ivory);
+  /* Form validation messages. Distinct from --destructive, which shadcn
+     uses for destructive *actions*; this is for "you typed it wrong". */
+  --error: #a33a32;
   --border: #ddd2bc;
   --input: #ddd2bc;
   --ring: var(--brass);
@@ -73,6 +76,7 @@
   --accent-foreground: var(--ivory);
   --destructive: #e06b6b;
   --destructive-foreground: var(--ink);
+  --error: #e8837a;
   --border: #262b33;
   --input: #2a2f37;
   --ring: var(--brass);

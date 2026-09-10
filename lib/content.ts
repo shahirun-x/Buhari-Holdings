@@ -11,29 +11,34 @@ import properties from "@/content/verticals/properties.json";
 import services from "@/content/verticals/services.json";
 import shippingTrading from "@/content/verticals/shipping-trading.json";
 
-export type Capability = {
-  title: string;
-  description: string;
-};
+import coastalEnergen from "@/content/news/coastal-energen-work-order.json";
+import hidcoKolkata from "@/content/news/hidco-kolkata-flyover.json";
+import onKeepingRecords from "@/content/news/on-keeping-records.json";
+import steadyPassage from "@/content/news/steady-passage.json";
+import theLongView from "@/content/news/the-long-view-in-construction.json";
+import whatOutlasts from "@/content/news/what-outlasts-the-ledger.json";
 
-export type VerticalContent = {
-  slug: string;
-  name: string;
-  tagline: string;
-  heroImage: string;
-  pullQuote: string;
-  overview: string[];
-  approach: {
-    heading: string;
-    body: string[];
-  };
-  capabilities: Capability[];
-  /**
-   * CLIENT-CONFIRM note. Present in every file and deliberately part of the
-   * type, so it cannot be dropped when a file is rewritten.
-   */
-  _note: string;
-};
+import careerRoles from "@/content/careers/roles.json";
+import galleryData from "@/content/gallery.json";
+
+import type {
+  Article,
+  GalleryItem,
+  Role,
+  VerticalContent,
+} from "@/lib/content-types";
+
+// Re-exported so server components have one import for content and its
+// shapes; client components import the types from lib/content-types.
+export type {
+  Article,
+  Capability,
+  GalleryItem,
+  NewsCategory,
+  Role,
+  VerticalContent,
+} from "@/lib/content-types";
+export { NEWS_CATEGORIES } from "@/lib/content-types";
 
 /**
  * Statically imported rather than read from disk at request time: these are
@@ -66,4 +71,50 @@ export function getAllVerticals(): VerticalContent[] {
   return getVerticalSlugs()
     .map((slug) => VERTICAL_CONTENT[slug])
     .filter((entry): entry is VerticalContent => Boolean(entry));
+}
+
+const ARTICLES: Article[] = [
+  theLongView,
+  steadyPassage,
+  whatOutlasts,
+  hidcoKolkata,
+  coastalEnergen,
+  onKeepingRecords,
+];
+
+/**
+ * Newest first, with undated editorial pieces ahead of everything —
+ * they are not news and shouldn't sink below an old dated item.
+ */
+export function getArticles(): Article[] {
+  return [...ARTICLES].sort((a, b) => {
+    if (!a.date && !b.date) return 0;
+    if (!a.date) return -1;
+    if (!b.date) return 1;
+    return b.date.localeCompare(a.date);
+  });
+}
+
+export function getArticle(slug: string): Article | undefined {
+  return ARTICLES.find((article) => article.slug === slug);
+}
+
+export function getArticleSlugs(): string[] {
+  return ARTICLES.map((article) => article.slug);
+}
+
+/** Up to `count` other articles, for the "more from" rail. */
+export function getRelatedArticles(slug: string, count = 3): Article[] {
+  return getArticles()
+    .filter((article) => article.slug !== slug)
+    .slice(0, count);
+}
+
+/** Deliberately may be empty — the page renders an honest empty state. */
+export function getRoles(): Role[] {
+  return (careerRoles as { roles: Role[] }).roles;
+}
+
+export function getGalleryItems(): GalleryItem[] {
+  return (galleryData as { items: GalleryItem[] }).items;
 }

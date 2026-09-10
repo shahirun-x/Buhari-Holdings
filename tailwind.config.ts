@@ -48,6 +48,7 @@ const config = {
         "accent-foreground": "var(--accent-foreground)",
         destructive: "var(--destructive)",
         "destructive-foreground": "var(--destructive-foreground)",
+        error: "var(--error)",
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",

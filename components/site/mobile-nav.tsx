@@ -95,6 +95,13 @@ export function MobileNav() {
                     }}
                   >
                     <div className="min-h-0 overflow-hidden pb-3">
+                      <Link
+                        href="/businesses"
+                        onClick={() => setOpen(false)}
+                        className="block rounded-md py-2 pl-6 font-body text-lg text-brass outline-none transition-colors focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                      >
+                        All businesses
+                      </Link>
                       {BUSINESS_VERTICALS.map((vertical) => (
                         <Link
                           key={vertical.slug}

@@ -1,0 +1,11 @@
+{
+  "_note": "CLIENT-CONFIRM REQUIRED. The phone number and email address on this page are placeholders carried over from the footer and must be replaced with real, monitored contacts before launch — a contact page that reaches nobody is worse than no contact page. The postal address is taken from the client's own published details and should still be confirmed as current, including whether Moores Road is the correct address for correspondence as opposed to a registered office. The map is an OpenStreetMap embed centred on Nungambakkam rather than a plotted pin, because the exact building has not been confirmed; confirm the coordinates and the embed will centre properly. The form currently only logs to the server console — see the TODO in app/contact/actions.ts for what has to be wired, and confirm which address or CRM submissions should reach. Confirm too whether separate routes are wanted per subject, for example careers enquiries going to a different inbox.",
+  "kicker": "Contact",
+  "heading": "Talk to us.",
+  "lead": "For enquiries across any of the group's sectors — or anything that does not fit neatly into one. We read everything that arrives.",
+  "map": {
+    "title": "Map showing Nungambakkam, Chennai",
+    "embedSrc": "https://www.openstreetmap.org/export/embed.html?bbox=80.230%2C13.045%2C80.260%2C13.070&layer=mapnik",
+    "linkHref": "https://www.openstreetmap.org/#map=15/13.0575/80.2450"
+  }
+}

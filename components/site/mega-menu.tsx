@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 import { BUSINESS_VERTICALS } from "@/components/site/nav-config";
 
@@ -30,6 +31,21 @@ export function MegaMenu() {
             </Link>
           );
         })}
+      </div>
+
+      {/* The trigger above opens this panel rather than navigating, so
+          without this the overview page has no route in from the nav. */}
+      <div className="container pb-10">
+        <Link
+          href="/businesses"
+          className="group inline-flex items-center gap-2 rounded-sm font-body text-sm text-foreground outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+        >
+          <span className="border-b border-brass pb-1">All businesses</span>
+          <ArrowRight
+            className="size-4 shrink-0 text-brass transition-transform duration-200 ease-out group-hover:translate-x-1"
+            aria-hidden
+          />
+        </Link>
       </div>
     </div>
   );

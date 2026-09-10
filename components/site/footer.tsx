@@ -4,6 +4,7 @@ import {
   BUSINESS_VERTICALS,
   FOOTER_ABOUT_LINKS,
   FOOTER_COMPANY_LINKS,
+  HEAD_OFFICE,
   SOCIAL_LINKS,
 } from "@/components/site/nav-config";
 import { MastheadRule } from "@/components/site/masthead-rule";
@@ -31,22 +32,35 @@ export function Footer() {
           </p>
 
           <address className="mt-6 font-body text-sm not-italic text-ivory/80">
-            No. 4, Moores Road
-            <br />
-            Nungambakkam, Chennai 600006
-            <br />
-            Tamil Nadu, India
+            {HEAD_OFFICE.lines.map((line, i) => (
+              <span key={line}>
+                {line}
+                {i < HEAD_OFFICE.lines.length - 1 ? <br /> : null}
+              </span>
+            ))}
           </address>
 
           <div className="mt-4 font-body text-sm text-ivory/80">
-            <p>+91 44 XXXX XXXX</p>
-            <p>hello@buhariholding.com</p>
+            <p>{HEAD_OFFICE.phone}</p>
+            <p>{HEAD_OFFICE.email}</p>
           </div>
         </div>
 
         {/* Businesses */}
         <div>
-          <p className={headingClasses}>Businesses</p>
+          {/* The heading links to the overview. The nav's own "Businesses"
+              item opens the mega-menu rather than navigating, and that menu
+              lives in a portal that only mounts on open — so without this
+              the overview page has no server-rendered link anywhere, and
+              nothing crawls to it. */}
+          <p className={headingClasses}>
+            <Link
+              href="/businesses"
+              className="rounded-sm outline-none transition-colors hover:text-ivory focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+            >
+              Businesses
+            </Link>
+          </p>
           {BUSINESS_VERTICALS.map((vertical) => (
             <Link
               key={vertical.slug}
