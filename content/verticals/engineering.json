@@ -1,0 +1,45 @@
+{
+  "slug": "engineering",
+  "name": "Engineering",
+  "tagline": "Automotive & industrial systems",
+  "heroImage": "/images/vertical-engineering.svg",
+  "pullQuote": "Engineering is mostly the discipline of finding out what will fail first.",
+  "overview": [
+    "The engineering business works on automotive and industrial systems — the assemblies and sub-assemblies that sit inside somebody else's product or plant. It is work rarely seen by the end user and judged almost entirely on whether it holds up under conditions nobody described precisely in advance.",
+    "Because the output is a component rather than a finished thing, the relationship with the customer is technical before it is commercial. Most of the value is created in the conversation before anything is made, when a requirement is still loose enough to be improved."
+  ],
+  "approach": {
+    "heading": "Tolerances and consequences",
+    "body": [
+      "A specification describes what should happen. The useful question is what happens at the edges of it — the tolerance stack that is individually acceptable and collectively not, the duty cycle nobody wrote down, the maintenance that will not actually be performed. Engineering here starts from those edges and works inward.",
+      "The group prefers to be involved early enough to change a design rather than late enough only to build it. A problem caught on a drawing costs a conversation; the same problem caught on a production line costs considerably more."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Systems design",
+      "description": "Working a requirement into something that can be made repeatably."
+    },
+    {
+      "title": "Automotive assemblies",
+      "description": "Components and sub-assemblies built to a customer's specification."
+    },
+    {
+      "title": "Industrial equipment",
+      "description": "Plant and process equipment intended for continuous duty."
+    },
+    {
+      "title": "Prototyping",
+      "description": "Making the first one in order to learn what the hundredth will need."
+    },
+    {
+      "title": "Testing and validation",
+      "description": "Establishing behaviour at the edges of the specification, not the centre."
+    },
+    {
+      "title": "Technical support",
+      "description": "Staying with a component through its service life."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes engineering in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the engineering companies in the group and their relationship to Buhari Holdings; the customer sectors served and whether any customers may be named; plant locations and whether they sit inside the six markets already stated; production capacity or throughput figures, if any are to be published; quality-management and automotive certifications held, with issuing bodies and scope; and confirmation of which system types are genuinely in scope, since this copy describes the sector broadly. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: machined detail or an assembly line — close, technical, lightly peopled or unpeopled. Replace /images/vertical-engineering.svg — see public/images/README.md for dimensions."
+}

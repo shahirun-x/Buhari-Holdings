@@ -1,0 +1,41 @@
+{
+  "slug": "energy",
+  "name": "Energy",
+  "tagline": "Power, oil & gas",
+  "heroImage": "/images/vertical-energy.svg",
+  "pullQuote": "Energy assets are judged on the days they are not interesting at all.",
+  "overview": [
+    "The energy business spans power, oil and gas — sectors that share a characteristic the group takes seriously: the cost of interruption is carried by everyone downstream, not by the asset alone. Reliability is therefore the operating measure, ahead of efficiency and well ahead of novelty.",
+    "Work in this sector runs on long horizons and slow feedback. Decisions taken when an asset is commissioned determine what it costs to run for the rest of its life, and by the time that becomes visible the decision is expensive to revisit."
+  ],
+  "approach": {
+    "heading": "Uneventfulness as an objective",
+    "body": [
+      "The measure of an energy asset is the proportion of its life during which nothing noteworthy happens. That sounds like an absence of ambition and is in fact the harder thing to engineer — it means designing for conditions that occur rarely, and maintaining against failures that have not happened yet.",
+      "Maintenance is planned rather than triggered. Deferring work because an asset is still running is the most common way to convert a small scheduled cost into a large unscheduled one, so the schedule is treated as the commitment."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Power",
+      "description": "Generation and distribution assets held to continuous availability."
+    },
+    {
+      "title": "Oil and gas",
+      "description": "Interests across the handling and movement of hydrocarbons."
+    },
+    {
+      "title": "Asset operation",
+      "description": "Running plant to a planned regime rather than a reactive one."
+    },
+    {
+      "title": "Planned maintenance",
+      "description": "Work carried out on schedule, before condition forces the timing."
+    },
+    {
+      "title": "Reliability engineering",
+      "description": "Designing and operating for the rare condition, not the typical one."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes energy in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the energy entities and their relationship to Buhari Holdings, which matters particularly here because trading, operating and holding interests carry very different implications; which of power, oil and gas the group is genuinely active in and in what role; generation capacity, throughput or reserve figures if any are to be published, with a source; asset locations against the six stated markets; regulatory licences and safety certifications held, with issuing bodies; and confirmation of whether any renewable activity should be represented, since this copy does not mention it. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: power, oil or gas infrastructure at scale — plant, pipeline or transmission, shot cleanly. Replace /images/vertical-energy.svg — see public/images/README.md for dimensions."
+}

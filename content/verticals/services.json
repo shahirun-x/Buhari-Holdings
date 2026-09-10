@@ -1,0 +1,41 @@
+{
+  "slug": "services",
+  "name": "Services",
+  "tagline": "Facility & institutional care",
+  "heroImage": "/images/vertical-services.svg",
+  "pullQuote": "Facilities work is noticed only when it stops. That is the standard.",
+  "overview": [
+    "The services business looks after buildings and the institutions inside them. It is the least visible of the group's sectors and the closest to daily life — the work that decides whether a school, a hospital or an office is a decent place to spend a day, and which is noticed almost exclusively in its absence.",
+    "Institutional care sits alongside general facilities work because the two demand the same thing: continuity. Buildings in constant public use cannot be taken offline for convenience, so the work has to happen around the people using them."
+  ],
+  "approach": {
+    "heading": "Around the people using the building",
+    "body": [
+      "Everything is scheduled around occupancy rather than around the crew. That is slower and more awkward than the alternative, and it is the only way to maintain a building genuinely in use without degrading the thing the building is for.",
+      "Continuity of people matters as much as continuity of service. Teams that stay with a site learn its particular faults — the door that drops in humidity, the plant that needs attention before anything registers — and that knowledge does not survive being handed over."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Facility management",
+      "description": "Day-to-day operation of buildings in continuous use."
+    },
+    {
+      "title": "Institutional support",
+      "description": "Services for schools, hospitals and civic buildings, worked around occupancy."
+    },
+    {
+      "title": "Planned maintenance",
+      "description": "Scheduled work carried out before condition forces the timing."
+    },
+    {
+      "title": "Building systems",
+      "description": "Mechanical and electrical plant kept in service rather than repaired late."
+    },
+    {
+      "title": "Housekeeping and upkeep",
+      "description": "The visible standard a building is judged on every day."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes services in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the services entities and their relationship to the group; the types of institution served and whether any may be named, which for schools and hospitals is a privacy question as well as a commercial one; the number of sites or floor area under management if that is to be published, with a source; whether services extend beyond India, since this copy implies the group's full footprint; workforce figures, if any are to be stated; and health, safety and quality certifications held. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: people at work maintaining a building in use — documentary, unposed, respectful of occupants. Replace /images/vertical-services.svg — see public/images/README.md for dimensions."
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "manufacturing",
+  "name": "Manufacturing",
+  "tagline": "Steel & composites",
+  "heroImage": "/images/vertical-manufacturing.svg",
+  "pullQuote": "Material chooses the method. Getting that order backwards is how things go wrong.",
+  "overview": [
+    "The manufacturing business works in steel and composites — two materials that behave nothing alike and reward almost opposite instincts. Steel is forgiving in ways composites are not, and composites permit shapes and weights steel will never reach. Holding both means the group can start from the requirement rather than from the material it happens to own equipment for.",
+    "Output ranges from structural elements to formed and finished parts. What the work has in common is that it is made to somebody else's drawing and has to arrive right, because a manufactured part that is nearly correct is generally of no use at all."
+  ],
+  "approach": {
+    "heading": "Two materials, one standard",
+    "body": [
+      "The first decision on any job is which material the requirement actually wants — not which is cheaper by weight, but which will behave under the load, the environment and the handling the part will meet. That decision drives everything downstream, and reversing it later is rarely economic.",
+      "Consistency is treated as the product. A run of parts that are individually acceptable but vary between themselves creates work for whoever receives them, so process control is generally held tighter than the drawing tolerance."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Steel fabrication",
+      "description": "Cutting, forming and joining structural and formed steel."
+    },
+    {
+      "title": "Composite production",
+      "description": "Laid-up and moulded components where weight or shape rules out metal."
+    },
+    {
+      "title": "Material selection",
+      "description": "Choosing the material the requirement wants rather than the one on hand."
+    },
+    {
+      "title": "Finishing and treatment",
+      "description": "Surface and protective work carried to the service environment."
+    },
+    {
+      "title": "Process control",
+      "description": "Holding variation between parts tighter than the drawing demands."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes manufacturing in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the manufacturing entities and their corporate relationship to the group; plant locations and whether they fall within the six stated markets; installed capacity, tonnage or output figures if any are to be published, with a source; material grades and composite systems actually worked, since this copy names neither; quality and material certifications held; and a representative set of parts or products cleared for publication. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: plant floor, material or process — steel or composite work in progress, quiet lower third. Replace /images/vertical-manufacturing.svg — see public/images/README.md for dimensions."
+}

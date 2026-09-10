@@ -1,0 +1,41 @@
+{
+  "slug": "shipping-trading",
+  "name": "Shipping & Trading",
+  "tagline": "Global bulk & liquid cargo",
+  "heroImage": "/images/vertical-shipping-trading.svg",
+  "pullQuote": "Cargo moves on relationships as much as on routes, and relationships take longer to build.",
+  "overview": [
+    "The shipping and trading business moves bulk and liquid cargo across the group's markets. It is the sector where the group's international reach is most literal, and the one most exposed to conditions nobody controls — weather, congestion, and a market that can reprice between agreeing a cargo and loading it.",
+    "Trading and shipping are run as one thought rather than two. A cargo that is well bought and badly moved is not a good cargo, so the operational side of the business is treated as part of the commercial decision rather than a consequence of it."
+  ],
+  "approach": {
+    "heading": "Reliability when nothing agrees",
+    "body": [
+      "Conditions at sea and conditions in the market rarely cooperate, and the useful skill is being predictable to a counterparty when neither is going the right way. The group would rather be the party that turns up on the agreed terms in a bad month than the one that optimised a good one.",
+      "That produces a bias towards fewer, longer relationships. Repeat counterparties know how the group behaves under pressure, which removes a category of risk from both sides and is worth more over time than a better rate taken once."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Bulk cargo",
+      "description": "Dry cargo moved across the group's established markets."
+    },
+    {
+      "title": "Liquid cargo",
+      "description": "Handling and movement where containment is the whole discipline."
+    },
+    {
+      "title": "Chartering",
+      "description": "Matching cargo to tonnage on terms both sides can keep."
+    },
+    {
+      "title": "Trade operations",
+      "description": "Documentation, scheduling and the detail that decides whether a voyage works."
+    },
+    {
+      "title": "Counterparty relationships",
+      "description": "Fewer and longer, because predictability compounds."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes shipping & trading in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the shipping and trading entities and their relationship to Buhari Holdings; whether the group owns, charters or brokers tonnage, since the site must not imply a fleet it does not hold; fleet size, vessel types or cargo volumes if any figures are to be published, with a source; commodity types actually traded, which this copy leaves general; ports and trade lanes served, checked against the six stated markets; and maritime, safety and environmental certifications held. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: vessel, cargo handling or port operations — scale visible, lower third quiet. Replace /images/vertical-shipping-trading.svg — see public/images/README.md for dimensions."
+}

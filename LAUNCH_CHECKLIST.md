@@ -23,6 +23,19 @@ The other sections are ordinary release work and can be judged on their merits.
   - [ ] `components/site/group-companies.tsx:55` — pointer to the note above;
         re-read before making cards links or changing the heading
   - [ ] `public/images/README.md:82` — logos may only be used once cleared
+- [ ] **All eight vertical pages confirmed.** Every file in
+      `content/verticals/` is editorial framing only: it states no project or
+      client names, values, dates, headcounts, capacities, certifications or
+      market positions, because none were supplied. Each `_note` lists what
+      that sector specifically needs:
+  - [ ] `content/verticals/properties.json` — operating companies, schemes cleared for publication, scale figures, accreditations
+  - [ ] `content/verticals/construction.json` — construction entities, named projects, the true start date of construction activity, capacity and certifications
+  - [ ] `content/verticals/engineering.json` — engineering companies, customer sectors, plant locations, capacity, quality and automotive certifications
+  - [ ] `content/verticals/manufacturing.json` — manufacturing entities, plant locations, capacity or tonnage, material grades and composite systems, certifications
+  - [ ] `content/verticals/energy.json` — energy entities and whether the group trades, operates or holds; which of power, oil and gas are live; capacity; licences; renewables
+  - [ ] `content/verticals/agency.json` — retail entities, which makers are represented and cleared to name, store locations and count, agency-agreement constraints
+  - [ ] `content/verticals/shipping-trading.json` — shipping entities, whether tonnage is owned, chartered or brokered; fleet and volume figures; commodities; lanes; certifications
+  - [ ] `content/verticals/services.json` — services entities, institution types and naming permissions, sites under management, geography, workforce, HSE certifications
 - [ ] **Every figure in `content/stats-band.json` confirmed by the client** —
       1989 founding year, 1,000+ people, 8 verticals, 6 markets. The "8" must
       stay in step with `BUSINESS_VERTICALS` in `components/site/nav-config.ts`.

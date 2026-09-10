@@ -1,0 +1,41 @@
+{
+  "slug": "properties",
+  "name": "Properties",
+  "tagline": "Real estate consulting",
+  "heroImage": "/images/vertical-properties.svg",
+  "pullQuote": "A building is a long argument about how people will want to live in it.",
+  "overview": [
+    "The property business begins with the question of what a site is actually for. That answer is rarely the one the market is asking for in any given year, and the group has generally been willing to wait for the better use rather than the quicker one. Advice here covers the whole arc of a holding — what to acquire, what to hold, what to improve and when to let go.",
+    "Real estate is the slowest of the group's sectors to reveal whether a decision was sound. A development reads as a success on handover and as something else entirely once a neighbourhood has grown around it. The work is therefore written to a longer horizon than a balance sheet usually rewards."
+  ],
+  "approach": {
+    "heading": "Patience as a method",
+    "body": [
+      "Every site carries constraints that arrive before any drawing does — access, orientation, drainage, the way people already move across the ground. The practice is to understand those first and let the brief follow, rather than fixing a brief and negotiating with the site afterwards.",
+      "Advisory work is kept close to the asset. The group prefers to stay involved past completion, because the questions that matter most about a property — how it ages, how it lets, how it is maintained — cannot be answered at the point of sale."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Site assessment",
+      "description": "Reading what a piece of ground will and will not support, before a brief is written."
+    },
+    {
+      "title": "Development advisory",
+      "description": "Guidance on use, phasing and specification across the life of a scheme."
+    },
+    {
+      "title": "Asset management",
+      "description": "Holding decisions — what to improve, what to keep and when to release."
+    },
+    {
+      "title": "Occupier advisory",
+      "description": "Matching space to the way an organisation works, not the way it is described."
+    },
+    {
+      "title": "Portfolio strategy",
+      "description": "Balancing a set of holdings so no single asset carries the whole position."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes properties in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the operating companies that trade in this sector and their exact relationship to Buhari Holdings; a representative set of completed and current schemes cleared for publication; any scale figures the client wishes to state, with a source; professional accreditations held; and named markets, if property activity extends beyond the six already stated on the site. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: a completed building or interior shot architecturally, quiet in the lower third where the type sits. Replace /images/vertical-properties.svg — see public/images/README.md for dimensions."
+}

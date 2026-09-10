@@ -1,0 +1,45 @@
+{
+  "slug": "construction",
+  "name": "Construction",
+  "tagline": "Civic building since 1989",
+  "heroImage": "/images/vertical-construction.svg",
+  "pullQuote": "Civic infrastructure answers to the people who use it thirty years from now.",
+  "overview": [
+    "Construction is the group's oldest line of work and the one that set its habits. Civic building imposes a discipline commercial work does not always demand — the client is ultimately the public, and the public keeps the building far longer than anyone involved in putting it up. That changes what counts as a good decision on site.",
+    "The business covers structures intended to stay in service for generations rather than lease cycles. Much of the judgement sits in specification: choosing the material that will still be serviceable when the people who chose it are gone, rather than the one that surveys best on completion."
+  ],
+  "approach": {
+    "heading": "Building for the second generation",
+    "body": [
+      "Specification is written for the second generation of a structure's users. That means favouring materials and details that can be maintained with ordinary skill and ordinary parts, because a building that needs a specialist to keep working will eventually stop working.",
+      "Sequencing matters as much as selection. Civic sites are usually occupied, adjacent to something in use, or both, so the programme is planned around keeping the surroundings functioning rather than around the shortest path to handover."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Civic and institutional",
+      "description": "Buildings held in public use, planned around long service rather than short cycles."
+    },
+    {
+      "title": "Structural works",
+      "description": "Frame, envelope and substructure, specified for maintainability."
+    },
+    {
+      "title": "Fit-out and finishing",
+      "description": "Interior works taken to the standard the building is judged on daily."
+    },
+    {
+      "title": "Site management",
+      "description": "Programme and sequencing on constrained or occupied sites."
+    },
+    {
+      "title": "Refurbishment",
+      "description": "Returning existing structures to service rather than replacing them by default."
+    },
+    {
+      "title": "Quality assurance",
+      "description": "Checking work against the specification while it can still be corrected."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes construction in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the construction entities operating under or alongside the group and their exact corporate relationship; a portfolio of representative completed projects with client permission to name them; the earliest verifiable date construction activity began, since the site currently dates all activity to the group's 1989 incorporation; any capacity, workforce or concurrent-site figures the client wishes to publish; and construction and quality certifications held, with issuing bodies. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: an active site — formwork, structure or cranes — with the lower third uncluttered. Replace /images/vertical-construction.svg — see public/images/README.md for dimensions."
+}

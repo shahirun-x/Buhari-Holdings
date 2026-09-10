@@ -1,0 +1,41 @@
+{
+  "slug": "agency",
+  "name": "Agency",
+  "tagline": "Retail, watches & jewellery",
+  "heroImage": "/images/vertical-agency.svg",
+  "pullQuote": "Retail is the one business where a customer sees the whole company at once.",
+  "overview": [
+    "The agency business covers retail representation, with watches and jewellery at its centre. These are categories bought rarely and kept a long time, often marking something, which makes the transaction unlike most retail — the customer is not comparing options so much as deciding whether to trust the person in front of them.",
+    "Representing a maker means carrying their standard in a room they will never visit. The group treats that as the substance of the work rather than a condition attached to it, because a name is only as intact as its least attentive counter."
+  ],
+  "approach": {
+    "heading": "The counter is the company",
+    "body": [
+      "Everything the group believes about the long term has to survive a five-minute interaction at a counter. Staff are given the time and the product knowledge to let a customer decide slowly, including the decision not to buy, because a rushed sale in these categories tends to come back.",
+      "Aftercare is treated as part of the sale rather than a service that follows it. Objects of this kind are brought back for adjustment, repair and resetting over decades, and those returns are the relationship rather than an interruption to it."
+    ]
+  },
+  "capabilities": [
+    {
+      "title": "Brand representation",
+      "description": "Carrying a maker's standard in rooms they will never visit."
+    },
+    {
+      "title": "Retail operations",
+      "description": "Running the counter as the place the company is actually judged."
+    },
+    {
+      "title": "Watches and jewellery",
+      "description": "Categories bought rarely, kept long, and often marking something."
+    },
+    {
+      "title": "Client advisory",
+      "description": "Giving a customer room to decide slowly, including deciding against."
+    },
+    {
+      "title": "Aftercare and service",
+      "description": "Adjustment, repair and resetting across the life of an object."
+    }
+  ],
+  "_note": "CLIENT-CONFIRM REQUIRED. Every sentence in this file is editorial framing written to hold the layout. It describes agency in general terms and deliberately states no project names, client names, contract values, dates, headcounts, capacities, certifications or market positions, because none have been supplied. To make this page real the client needs to provide: the retail entities and their relationship to the group; which brands or makers are represented and whether each has cleared being named on this site, which is a permissions question as much as an accuracy one; store locations and formats, and whether they sit within the six stated markets; the number of outlets, if that figure is to be published; any distribution or agency agreements that constrain how the relationship may be described; and whether categories beyond watches and jewellery are in scope. Until those arrive, do not add specifics to this copy from any other source. Photograph brief: counter or product detail — considered, well lit, no third-party branding visible unless cleared. Replace /images/vertical-agency.svg — see public/images/README.md for dimensions."
+}
