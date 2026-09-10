@@ -122,7 +122,7 @@ export function Footer() {
           </Link>
           <span aria-hidden>·</span>
           <Link
-            href="/sitemap"
+            href="/sitemap.xml"
             className="rounded-sm outline-none transition-colors hover:text-ivory focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
           >
             Sitemap

@@ -86,6 +86,13 @@ The other sections are ordinary release work and can be judged on their merits.
       mobile sheet, carousel controls, every card.
 - [ ] Screen-reader pass on the marquee — the duplicated card list is
       `aria-hidden`, so each company should be announced once.
+- [ ] **Stats count-up animation eyeballed on a real machine.** The static HTML
+      now ships the final figures and the client rewinds to the start value in a
+      layout effect before first paint; the rewind and the reduced-motion path
+      are verified, but the count itself is rAF-driven and the dev pane used
+      during the build does not fire `requestAnimationFrame` at all, so the
+      animation running 0 → 1,000+ is unverified. Check there is no flash of
+      the final value as the band scrolls into view.
 - [ ] `prefers-reduced-motion` verified end to end on a real machine.
 
 ## Infrastructure
@@ -101,7 +108,10 @@ The other sections are ordinary release work and can be judged on their merits.
 - [ ] **Analytics added.**
 - [ ] Routes built out. Every nav and footer link currently 404s except `/` —
       `/businesses/*`, `/community`, `/about/*`, `/newsroom`, `/careers`,
-      `/contact`, `/gallery`, `/innovation`, `/privacy`, `/terms`, `/sitemap`.
-- [ ] `robots.txt` and `sitemap.xml`.
+      `/contact`, `/gallery`, `/innovation`, `/privacy`, `/terms`.
+- [ ] **`app/sitemap.ts` is not built yet.** The footer "Sitemap" link points
+      at `/sitemap.xml`, which is the conventional destination but **currently
+      404s** — Next only serves it once `app/sitemap.ts` exists. Add it (and
+      `app/robots.ts`) before launch, or drop the footer link.
 - [ ] Search dialog wired or removed — it currently says "Search coming soon".
 - [ ] Node version in Vercel project settings matches `engines.node` (24.x).

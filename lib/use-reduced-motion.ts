@@ -34,3 +34,17 @@ function getServerSnapshot() {
 export function useReducedMotion(): boolean {
   return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
+
+/**
+ * The same preference, read synchronously, for the rare caller that cannot
+ * wait for the hook to settle.
+ *
+ * `useReducedMotion` deliberately reports `false` through hydration so the
+ * server and client render the same markup. That costs a render, which is
+ * fine for anything that reacts to the preference but not for a layout
+ * effect that has to decide something before the first paint. Client only —
+ * it touches `window`.
+ */
+export function prefersReducedMotion(): boolean {
+  return window.matchMedia(QUERY).matches;
+}

@@ -39,6 +39,14 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
   },
+  // Next derives the Twitter tags from openGraph but defaults the card to
+  // "summary". Declared explicitly so the large card is used — it needs
+  // og-default.jpg to exist before it renders as one. See LAUNCH_CHECKLIST.
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

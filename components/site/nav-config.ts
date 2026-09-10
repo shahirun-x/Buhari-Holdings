@@ -50,7 +50,7 @@ export const BUSINESS_VERTICALS: BusinessVertical[] = [
   {
     slug: "construction",
     name: "Construction",
-    description: "Four decades of civic building",
+    description: "Civic building since 1989",
     icon: HardHat,
   },
   {

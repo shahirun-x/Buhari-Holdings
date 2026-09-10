@@ -27,7 +27,7 @@ export function VerticalsGrid() {
             The group builds, moves and maintains — from construction and
             engineering to shipping, energy and the services that keep
             institutions running. Each sector is run as its own enterprise,
-            held to the same standard the last four decades were built on.
+            held to the same standard the group has kept since 1989.
           </p>
         </div>
 

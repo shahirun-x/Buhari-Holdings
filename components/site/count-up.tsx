@@ -3,7 +3,10 @@
 import * as React from "react";
 import { useInView } from "framer-motion";
 
-import { useReducedMotion } from "@/lib/use-reduced-motion";
+import {
+  prefersReducedMotion,
+  useReducedMotion,
+} from "@/lib/use-reduced-motion";
 
 const DURATION_MS = 1600;
 
@@ -15,7 +18,26 @@ const DURATION_MS = 1600;
 const GROUPED_FORMAT = new Intl.NumberFormat("en-US");
 
 /**
- * Counts from `from` to `value` once, when the number scrolls into view.
+ * Layout effects run before the browser paints; plain effects run after.
+ * The rewind below has to happen before the first paint, and useLayoutEffect
+ * warns if it runs during SSR — so pick per environment.
+ */
+const useIsomorphicLayoutEffect =
+  typeof window === "undefined" ? React.useEffect : React.useLayoutEffect;
+
+/**
+ * Counts up to `value` once, when the number scrolls into view.
+ *
+ * Renders the *final* value on the server. The markup a crawler or a social
+ * scraper reads is the static HTML, and a stat band that ships "1900 / 0+ /
+ * 0 / 0" tells them the company was founded in 1900 and has no people. The
+ * count is decoration; the figure is the content, so the figure is what gets
+ * server-rendered.
+ *
+ * The rewind to `from` therefore happens on the client, in a layout effect —
+ * before the first paint, so motion users never see the final value flash on
+ * screen and then jump backwards. Reduced-motion users are never rewound at
+ * all and simply keep the server's value.
  *
  * `once: true` means scrolling back up never restarts it. The tick runs in a
  * requestAnimationFrame loop rather than an interval so it tracks real
@@ -43,7 +65,17 @@ export function CountUp({
   const ref = React.useRef<HTMLSpanElement>(null);
   const reduced = useReducedMotion();
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [display, setDisplay] = React.useState(from);
+
+  // Seeded with the answer, so the server-rendered HTML carries it.
+  const [display, setDisplay] = React.useState(value);
+
+  // Reads the media query directly rather than via the hook: the hook
+  // reports false through hydration by design, which would rewind a
+  // reduced-motion user for one frame.
+  useIsomorphicLayoutEffect(() => {
+    if (prefersReducedMotion()) return;
+    setDisplay(from);
+  }, [from]);
 
   React.useEffect(() => {
     if (reduced || !inView) return;

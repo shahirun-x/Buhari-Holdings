@@ -1,5 +1,5 @@
 {
-  "_note": "Placeholder editorial copy. Written to sit in the right register and length for layout purposes only — it states no figures, dates, contract values, project names or clients. Replace wholesale with real Chronicle entries before launch.",
+  "_note": "Placeholder editorial copy. Written to sit in the right register and length for layout purposes only — it states no figures, dates, contract values, project names or clients. Replace wholesale with real Chronicle entries before launch. CLIENT-CONFIRM REQUIRED: the third entry refers to institutions the founding family established. As in content/community-band.json, the precise relationship between those institutions and Buhari Holdings Pvt Ltd is unconfirmed, so the copy deliberately avoids the present tense — it does not say the group supports, funds or administers them. Confirm the relationship with the client before restoring any ongoing-support wording.",
   "viewAllHref": "/newsroom",
   "items": [
     {
@@ -22,7 +22,7 @@
       "slug": "what-outlasts-the-ledger",
       "category": "Community",
       "title": "What outlasts the ledger",
-      "excerpt": "The institutions the group supports are not a line item. A short reflection on stewardship, and on the buildings that keep working long after the ribbon is cut.",
+      "excerpt": "The institutions the founding family established are not a line item. A short reflection on stewardship, and on the buildings that keep working long after the ribbon is cut.",
       "image": "/images/chronicle-3.svg",
       "alt": ""
     }
